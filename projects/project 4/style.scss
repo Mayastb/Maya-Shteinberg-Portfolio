@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+body {
+    direction: rtl;
+    background-color: #E5EEFF;
+    font-family: 'Assistant', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    gap: 20px;
+}
+
+.container>div {
+    background-color: #020253;
+    border: 1px solid #020253;
+    text-align: center;
+
+    h1{
+    color: #0EE1DA;
+   }
+
+   p {
+    color: #F9F9F9;
+   }
+}
+
+.container>div:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.container>div:nth-child() {
+    grid-column: 3/ span 5;
+    grid-row: 4/ span 7;
+}
+
+
