@@ -33,30 +33,22 @@ p {
     position: relative;
 }
 
-form {
+.container {
     border-color: white;
     font-size: small;
-    display: inline;
-    /* outline: none; */
+    display: flex;
+    gap: 15px;
     width: 400px;
-    height: 30p;
     top: 250px;
     margin: 0 auto;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.field {
+.container label{
     display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    justify-content: center;
+    justify-content: right;
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: auto ;
-}
-
 
 input{
     padding: 6px;
@@ -66,11 +58,16 @@ input{
     opacity: 1;
 }
 
-button {
-    padding: 6px;
-    width: 120px;
+Button {
+    padding: 5px 5px;
     border: none;
     box-shadow: 0px 0px 40px #00000066;
-    width: 300px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    border: none;
 }
 
+@media (max-width: 760px) {
+    
+}
