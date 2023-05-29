@@ -18,16 +18,6 @@ body {
     padding: 0;
 }
 
-h1 {
-    font-size: 55px;
-    font-weight: 900;
-    padding-bottom: 30px;
-}
-
-p {
-    font-size: 24px;
-}
-
 .img {
     background-image: url(assets/Coffee.png);
     height: 100%;
@@ -39,6 +29,16 @@ p {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 24px;
 }
 
 form {
@@ -78,11 +78,19 @@ label {
         flex-flow: wrap-reverse;
     }
 
-    form {
-        margin-top: 60px;
+    .form-control {
+        width: 100%;
     }
 
     .img {
-        height: 200px;
-    }
+            height: 200px;
+        }
+
+    h1{
+            font-size: 40px;
+        }
+    
+    .btn {
+        width: 100%;
+        }
 }

@@ -8,32 +8,37 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Portfolio</title>
+    <title>Maya Shteinberg - Portfolio</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="margin: 12px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ראשי</a>
+                    <a class="nav-link" href="#main">ראשי</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">אודות</a>
+                    <a class="nav-link" href="#about">אודות</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">גלריה</a>
+                    <a class="nav-link" href="#gallery">גלריה</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">צור קשר</a>
+                    <a class="nav-link" href="#contact">צור קשר</a>
                 </li>
             </ul>
         </div>
 
         <div class="container-fluid" style="flex-flow: row-reverse;">
-            <a class="navbar-brand logo" href="#">
+            <a class="navbar-brand logo" href="index.html">
                 <span>Maya Shteinberg</span>
                 <img src="assets/myAvatar.png" class="icon" alt="מאיה שטיינברג">
             </a>
@@ -41,7 +46,7 @@
     </nav>
 
     <div class="mt-4 p-5 main">
-        <h1>תיק עבודות אישי</h1>
+        <h1 id="main">תיק עבודות אישי</h1>
         <p>טוב מראה עיניים ממשמע אוזניים</p>
     </div>
 
@@ -58,7 +63,7 @@
         <p>היי! שמחה להציג את עצמי - שמי מאיה שטיינברג, אני מתגוררת באורנית עם בן-זוגי, יש לי בת נהדרת, חתולת בית ומרפסת עם צמחים.  </p>
         <p>במהלך השנים האחרונות עבדתי בתיירות יוצאת, הייתי אמא במשרה מלאה ועבדתי כמנהלת שיווק ומכירות בחברה קטנה. היום לאחר תקופה ארוכה של חיפוש עצמי בתחום הקריירה הגעתי למקום בו אני יכולה לשחק עם מה שאני אוהבת. אל תחום התכנות הגעתי אחרי שניסיתי למצוא מקום בו אוכל לבטא את  היצירתיות שבי כמו גם להגשים את הפוטנציאל שיש בי. גיליתי שאני נהנית לפתור בעיות, נהנית לחפש פתרונות, נהנית לראות איך נבנה משהו חדש מול העיניים שלי.</p>
         <p>אני יסודית מטבעי, רצינית, מוכנה לעבוד קשה בכל פרוייקט ומביאה איתי ניסיון רחב מאוד גם אם מגיע מתחומים מעט שונים.</p>
-        <button type="button" class="btn btn-info" >להורדת קורות חיים</button>
+        <button type="button" class="btn btn-info" ><a href="../main page/assets/מסמך 2.pdf" download="קורות חיים מאיה שטיינברג">להורדת קורות חיים >></a></button>
       </div>
     </div>
     <section id="gallery">
@@ -66,67 +71,68 @@
       <div class="row">
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111623.png" alt="Card image">
+                  <img class="card-img-top" src="../projects/project-pages/project-page 1/project1.jpg" alt="here & now">
                   <div class="card-body">
-                      <h4 class="card-title">שם הפרוייקט</h4>
-                      <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
-                      
-                      <a href="project1.html" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <h4 class="card-title">כאן ועכשיו</h4>
+                      <p class="card-text"> דף נחיתה, נבנה באמצעות HTML ו- CSS. </p>
+                      <br>
+                      <a href="../projects/project 1/project1.html" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111642.png" alt="Card image">
+                  <img class="card-img-top" src="../projects/project-pages/project-page 2/project_2.jpg" alt="Card image">
                   <div class="card-body">
-                      <h4 class="card-title">שם הפרוייקט</h4>
-                      <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
-                      
-                      <a href="#" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <h4 class="card-title">תן לנו להוביל אותך קדימה</h4>
+                      <p class="card-text">דף נחיתה אשר נבנה באמצעות HTML ו- CSS.</p>
+                      <br>
+                      <a href="#" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111648.png" alt="Card image">
+                  <img class="card-img-top" src="../projects/project-pages/project-page 3/project3.jpg" alt="Card image">
                   <div class="card-body">
-                      <h4 class="card-title">שם הפרוייקט</h4>
-                      <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
+                      <h4 class="card-title">קפה טוב לבוקר טוב</h4>
+                      <p class="card-text">דף נחיתה אשר נבנה באמצעות HTML ו- CSS.</p>
+                      <br></p>
                       
-                      <a href="#" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <a href="../projects/project-pages/project-page 3/project_page_4.html" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111651.png" alt="Card image">
+                  <img class="card-img-top" src="../projects/project-pages/project-page 4/assets/project4.jpg" alt="Card image">
                   <div class="card-body">
-                      <h4 class="card-title">שם הפרוייקט</h4>
-                      <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
+                      <h4 class="card-title">לגלות את העולם</h4>
+                      <p class="card-text">פרוייקט דף נחיתה הנבנה באמצעות שימוש ב HTML וב CSS, נבנה באמצעות שימוש ברשת (Grid).</p>
                       
-                      <a href="#" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <a href="#" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111654.png" alt="Card mage">
+                  <img class="card-img-top" src="../projects/project-pages/screen shots/Landing-Page-Option-–-15-1024x577.png" alt="Card mage">
                   <div class="card-body">
                       <h4 class="card-title">שם הפרוייקט</h4>
                       <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
                       
-                      <a href="#" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <a href="#" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>
           <div class="col-sm-4">
               <div class="card">
-                  <img class="card-img-top" src="../projects/screen-shots/Image20230502111701.png" alt="Card image">
+                  <img class="card-img-top" src="../projects/project-pages/screen shots/Landing-Page-Option-–-1-1024x577.png">
                   <div class="card-body">
                       <h4 class="card-title">שם הפרוייקט</h4>
                       <p class="card-text">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק.</p>
                       
-                      <a href="#" class="btn btn-info">לעמוד הפרוייקט</a>
+                      <a href="#" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
               </div>
           </div>

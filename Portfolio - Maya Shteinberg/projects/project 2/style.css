@@ -77,4 +77,30 @@ button {
     .background-div {
         width: 100vh; 
     }
+
+    form {
+      width: 80%;
+      height: auto; 
+      padding: 45px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px !important;
+        margin: -2px;
+    }
+
+    .field>label {
+        font-size: 20px;
+        font-weight: 200;
+        margin-right: -25px;
+    }
+
+    .field>input {
+        height: 54px;
+        width: 100%;
+    }
 }
