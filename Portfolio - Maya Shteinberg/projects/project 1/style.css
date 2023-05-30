@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
 html {
     height: 100%;
     display: flex;
@@ -15,6 +25,7 @@ body {
     direction: rtl;
     text-align: center;
     color: white;
+    animation: fadeIn 1s ease-in-out 1;
 }
 
 h1 {

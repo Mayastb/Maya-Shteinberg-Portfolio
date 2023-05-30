@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
 body {
     direction: rtl;
     background-color: #E5EEFF;
     font-family: 'Assistant', sans-serif;
+    animation: fadeIn 1s ease-in-out 1;
 }
 
 .container {
