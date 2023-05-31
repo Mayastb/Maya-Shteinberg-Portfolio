@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+body {
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
+    animation: fadeIn 1s ease-in-out 1;
+    background-image: url('assets/Path\ 15.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+.frame {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+h1 {
+    color: #D3E10E;
+    font-size: 80px;
+    text-align: center;
+    margin: 55px;
+}
+
+p {
+    color: #F9F9F9;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+    
+
+label {
+    color: #011560;
+    display: block;
+    text-align: justify;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+input {
+    box-sizing: border-box;
+    border: none;
+    background-color: #F6F6F6;
+    border-bottom: 3px solid #D3E10E;
+    width: 400px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+button {
+    background-color: #D3E10E;
+    color: #011560;
+    display: block;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    margin-top:auto;
+    align-items: baseline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1227px) {
+    .container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 400px;
+        display: block;
+       position: relative;
+       top: 10px;
+    }
+}
+
+@media (max-width: 1013px) {
+    h1 {
+        font-size: 60px;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    h2 {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 760px) {
+    body {
+        max-width: 100%;
+    }
+
+    frame {
+        width: 100vh;
+    }
+
+    form {
+    margin: auto;
+    max-width: 100%;
+   }
+    
+   h1 {
+    font-size: 55px;
+    margin: 10px;
+    }
+    
+   p {
+    margin: none;
+    }
+
+    .container {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+    }
+
+    input {
+        width: 400px;
+        margin-right: 5px;
+
+    }
+
+    button {
+        width: 400px;
+        margin: 10px;
+        position: relative;
+        top: 10px;
+    }
+}
+

@@ -119,5 +119,7 @@ button {
     button {
         display: inline-block;
         margin-right: 0px;
+        position: relative;
+        left: 120px;
     }
 }

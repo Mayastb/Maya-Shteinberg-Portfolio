@@ -53,15 +53,15 @@ p {
 }
 
 form {
-    max-width: 600px;
-    padding: 16px;
+    font-size: 1.4rem;
+    width: 70%;
 }
 
 label {
     display: block;
     margin: 20px 0;
     color: #2C2C2C;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@ label {
     border-bottom: 4px solid #020253;
     border-radius: 0px; 
     height: 55px;
-    width: 550px;
+    width: 500px;
 }
 
 .btn {
@@ -85,16 +85,22 @@ label {
 
 @media (max-width: 768px) {
     .row {
-        position: static;
+        position: flex;
         flex-flow: wrap-reverse;
     }
 
+    form {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    
     .form-control {
         width: 100%;
     }
 
     .img {
-            height: 200px;
+            height: 100%;
+            max-width: 100%;
         }
 
     h1{
