@@ -1,0 +1,62 @@
+h2 {
+    margin: 40px o 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: coral;
+}
+
+.divFrame div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid firebrick;
+}
+
+.rightLayer, .leftLayer{
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: 2;
+}
+
+.rightLayer {
+    top: 30px;
+    left: 30px;
+}
+
+.leftLayer {
+    top: -30;
+    left: -30;
+}
+
+.bigDiv{
+    background-color: gray;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.bigDiv div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.bigDiv div:first-child{
+    background-color: red;
+    
+    
+}
+
+.bigDiv div:nth-child(2){
+    background-color: blue;
+    position: absolute;
+    height: 90px;
+    width: 90px;
+}
+
+.rightLayerLow {
+    left: 30px;
+    top: 30px;
+}

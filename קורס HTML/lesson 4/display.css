@@ -1,0 +1,74 @@
+.rectangle{
+   
+    height: 50px;
+
+}
+
+.yellow{
+    background-color: yellow;
+
+}
+.green{
+    background-color: green;
+
+}
+.blue{
+    background-color: blue;
+
+}
+.red{
+    background-color: red;
+
+}
+.purple{
+    background-color: purple;
+
+}
+
+.rank .green{
+    width: 90%;
+}
+
+.rank .blue{
+ width: 80%;
+}
+
+.rank .red{
+    width: 70%;
+}
+
+.rank .purple{
+    width: 60%;
+}
+
+.small .rectangle{
+    width: 20%;
+}
+
+.row .rectangle{
+    display: inline-block;
+    width: 18%;
+}
+
+/* .block { 
+    height: 50px;
+}
+
+.white{
+    background-color: white;
+}
+.gray{
+    background-color: gray;
+}
+.black{
+    background-color: black;
+}
+
+.center .block{
+    display: inline-block;
+    width: 18%;
+}
+
+.center .black{
+   margin: center;
+}

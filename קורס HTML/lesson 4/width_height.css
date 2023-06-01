@@ -1,0 +1,18 @@
+.myDiv {
+    background-color: azure;
+    width: 300px;
+    padding: 12px;
+    margin: 16px;
+}
+
+/* הגדרנו גובה לאלמנט האחרון וכל הטקסט גולש ממנו */
+.myDiv :first-child{
+height: 300px;
+/* הגדרנו שהגודל יכלול בתוכו את הריווח הפנימי והמסגרת */
+box-sizing: border-box;
+}
+
+/* ביטלנו את ריווח ברירת המחדל של הפסקאות */
+p{
+    margin: 0;
+}

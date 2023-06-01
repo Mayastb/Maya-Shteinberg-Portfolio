@@ -1,0 +1,48 @@
+
+body{
+    /* גיוון האתר מימין לשמאל */
+    direction: rtl;
+    /* שינוי גופן לאתר */
+    font-family: 'Courier New', Courier, monospace;
+    /* רקע */
+    background-color: rgb(199, 171, 136);
+}
+
+h1 {
+    /* ישור טקסט */
+    text-align: center;
+    /* צבע טקסט */
+    color:rgb(9, 78, 139);
+}
+
+.frame{
+    /* רוחב */
+    width: 80%;
+    /* מקסימום רוחב */
+    max-width: 900px;
+    /* מינימום גובה */
+    min-height: 300px;
+    /* רקע */
+    background-color: rgb(149, 181, 182);
+    /* ריווח חיצוני  (גורם למירכוז האלמנט) אוטומטי */
+    margin: auto;
+    /* ריווח פנימי של האלמנט */
+    padding: 8px 16px;  
+    /* עיגול קצוות */
+    border-radius: 6px;
+
+}
+
+img{
+    width: 100%;
+
+}
+
+.navbar{
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: right;
+    color: azure;
+}
+

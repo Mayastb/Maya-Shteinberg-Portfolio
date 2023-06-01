@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>תרגול תנאים</title>
+    <script>
+        function targil1(){
+            var password=prompt("enter password");
+            if (password==gg){
+                alert ("welcome");
+                } else{  
+                alert("password is invalid");
+                }
+            }
+        function targil2(){
+            var name=prompt("enter user name");
+            var password=prompt("enter password");
+            if ((name==22) && (password==33)){
+                alert("welcome");            }
+            
+            
+        }
+        function targil4(){
+            var age=prompt("enter your age");
+            if (age<=16){
+                alert("אתה לא יכול לנהוג");
+            }else if (age<=18){
+                alert("אתה יכול להתחיל ללמוד נהיגה");
+            }else if (age>18 && age<69){
+                alert("אתה יכול לנהוג");
+            }else if (age>70){
+                alert("אתה יכול לנהוג באישור רופא");
+             }
+             }
+        function targil5(){
+            var size=prompt("what is your panst size?");
+            if (size>24 && size<30){
+                alert("your size is S");
+            }else if (size>31 && size<36){
+                alert("your size is M");
+            }else if (size >36){
+                alert("your size is L");
+            }else {
+                alert("sorry we don't have your size");
+            }
+            }
+        function targil6(){
+            var num=prompt("enter a number");
+            if (num %2==0){
+                alert("מספר זוגי");
+            } else {
+                alert("מספר אי זוגי");
+            }
+        }
+        function targil7(){
+            var num1=prompt("enter a number");
+            var num2=prompt("enter another number");
+            var sign=prompt("enter either + or *");
+            if (sign=="+"){
+                alert(Number(num1)+Number(num2));
+            } else if (sign=="*"){
+                alert(Number(num1)*Number(num2));
+            }
+            }
+            function targil8(){
+               var pass=prompt("enter password");
+               var username=prompt("enter username");
+               if (pass.length == 0){
+                alert("please enter password");
+               } else if (usrename.lenght==0){
+                    alert("please enter username");
+                } else if ((pass=="hackeru123") && (username=="hacker"))
+                {
+                    alert("welcome");
+                } else { 
+                     alert("username and password are inncorect");
+               }
+            }
+</script>
+</head>
+<body>
+    <button onclick="targil1()">סיסמה</button>
+    <button onclick="targil2()">משתמש</button>
+    <button onclick="targil4()">גיל</button>
+    <button onclick="targil5()">מידה</button>
+    <button onclick="targil6()">זוגי</button>
+    <button onclick="targil7()">חישוב</button>
+    <button onclick="targil8()">לוגין</button>
+</body>
+</html>

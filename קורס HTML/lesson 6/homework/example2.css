@@ -1,0 +1,15 @@
+h2{
+    background-color: lightskyblue;
+    color: aliceblue;
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: slategray;
+    display: inline-block;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+   
+}

@@ -1,0 +1,58 @@
+body{
+    background-color: rebeccapurple;
+}
+
+.frame{
+    text-align: center;
+}
+
+.frame>div:not(.text){
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+    display: inline-block;
+    background-color: rgb(121, 22, 22);
+    border-radius: 4px;
+}
+
+.frame div:first-child{
+ 
+    box-shadow: 0 0 8px gray;
+}
+
+.frame div:nth-child(2){
+box-shadow: inset 0 0 42px black;
+
+}
+
+.frame div:nth-child(3){
+box-shadow: 7px 7px 0px 4px black;
+
+}
+.frame div:nth-child(4){
+box-shadow: 0 0 42px black, inset 0 0 42px black;
+
+}
+.frame div:nth-child(5){
+box-shadow: 0 0 0px 4px rgb(34, 28, 126) 
+}
+
+p:first-child {
+    color: rgb(3, 1, 5);
+    text-shadow: 5px 5px 0px rgb(165, 69, 69);
+}
+
+p:nth-child(2){
+    text-shadow: 2px 2px 5px red;
+}
+
+p:nth-child(3){
+    text-shadow: -2px -2px 4px red, 2px -2px 4px red, 2px 2px 4px red, -2px 2px 4px red;
+}
+
+p:nth-child(4){
+    color: rgb(199, 187, 166)
+    text-shadow:  0 0  6px black;
+    font-weight: bold;
+}
+

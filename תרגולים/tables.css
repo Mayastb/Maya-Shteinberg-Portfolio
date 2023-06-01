@@ -1,0 +1,38 @@
+table{
+    direction: rtl; 
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td{
+border: 1px solid;
+height: 30px;
+text-align: center;
+
+}
+
+.color{
+    background-color: darkorchid;
+}
+
+/* th { 
+color: white;
+background-color: purple;
+/* } */
+
+/* tr:nth-child(odd){
+    background-color: pink;
+} */
+
+.total{
+    background-color: gray;
+    color: white;
+}
+
+
+.back {
+    background-color: green;
+    color: white;
+   
+}

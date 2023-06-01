@@ -1,0 +1,13 @@
+body{
+
+background-color: darkorange;
+}
+
+img{
+    width: 350px;
+    float: right;
+    margin-left: 20px;
+    border: 20px solid gray;
+    box-shadow: 0 0 6px;
+
+}

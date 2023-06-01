@@ -1,0 +1,60 @@
+.example1{
+    background-color: cornsilk;
+    height: 600px;
+    width: 100%;
+    
+}
+
+.ex1{
+    background-color: rgb(211, 198, 198);
+    height: 150px;
+    width: 28%;
+    display: inline-block;
+    position: relative;
+}
+
+.ex1 div{
+    background-color: blue;
+    height: 50px;
+    width: 60px;
+}
+
+.example1:nth-child(2){
+    position: absolute;
+}
+
+.example1:nth-child(3){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.example1:nth-child(4){
+    position: absolute;
+    
+}
+
+.example1:nth-child(5){
+    position: absolute;
+    
+}
+
+.example1:nth-child(6){
+    position: absolute;
+    
+}
+
+.example1:nth-child(7){
+    position: absolute;
+    
+}
+
+.example1:nth-child(8){
+    position: absolute;
+    
+}
+
+.example1:nth-child(9){
+    position: absolute;
+    
+}
