@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Rubik+Gemstones&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-image: url("../project\ 8/assets/background.jpg");
+    padding-bottom: 200px;
+    background-size: 100%;
+    background-position: center center;
+}
+
+* {
+    font-family: 'Rubik Gemstones', cursive !important;
+}
+
+h1 {
+    text-align: center;
+    color: #f079b1;
+    text-shadow: 0 0 3px #336e3e, 0 0 5px #234a1e;
+    margin: 40px;
+    font-size: 85px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.frame {
+    width: 80%;
+    max-width: 400px;
+    min-height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.board {
+display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 45px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.board div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    font-size: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board div:not(.dirty):hover {
+    cursor: pointer;
+    background-color: #f079b1;
+}
+
+button {
+    background-color: #f079b1;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+}
+
+button:hover {
+    background-color: #a4d967;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.winner {
+    font-size: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoom-in 2s;
+}
+
+.bg {
+    background-color: #d967a6;
+}
+
+p {
+    font-size: 35px;
+    margin: 5px;
+}
+
+ .players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chooseX, #chooseO {
+    height: 80px;
+    width: 80px;
+    font-size: 58px;
+    margin: 20px 20px;
+}
+
+#resetGame {
+    height: 60px;
+    width: 270px;
+    font-size: 40px;
+}
+

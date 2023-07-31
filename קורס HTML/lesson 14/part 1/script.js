@@ -1,16 +1,14 @@
 const numbers = [56, 89, 88, 77, 36, 20, 100, 96, 35, 48, 77, 80];
 
 function addToArray(ev) {
-    // באובייקט של האוונט שקיבלנו - יש פרמטר שמביא לנו את האלמנט (target)
+    // אנחנו מריצים את הקוד רק אם המשתמש לחץ על אנטר (ENTER)
     const value = ev.target.value;
-
-    // אנחנו מריצים את הקוד רק אם המשתמש לחץ על אנטר (Enter)
-    // ורק אם יש ערך
-    if (ev.keyCode === 13 && value) {
-        numbers.push(+value);
-
-        // איפסנו את האינפוט
-        ev.target.value = "";
+    
+    // באובייקט של האוונט שקיבלנו - יש פרמטר שמביא לנו את האלמנט (TARGET)
+    if (ev.keyCode ===13 && value) {
+            numbers.push(+value);
+            // איפסנו את האינפוט
+            ev.target.value="";
     }
 }
 
@@ -21,29 +19,33 @@ function showArray() {
 function sum() {
     let res = 0;
 
-    for (let i = 0; i < numbers.length; i++) {
-        res += numbers[i];
-    }
+        for (let i = 0; i < numbers.length; i++){
+             const num = numbers[i];
+           
+             res += numbers[i];
+        }
 
     document.getElementById("output2").innerHTML = res;
 }
 
 function avg() {
-    let res = 0;
+        let res = 0;
 
-    for (let i = 0; i < numbers.length; i++) {
-        res += numbers[i];
-    }
+        for (let i = 0; i < numbers.length; i++){
+             const num = numbers[i];
+           
+             res += numbers[i];
+        }
 
-    document.getElementById("output3").innerHTML = Math.round(res / numbers.length);
+    document.getElementById("output3").innerHTML = Math.round(res/numbers.length);
 }
 
 function max() {
-    let res = numbers[0];
+    let res = 0;
 
-    for (let i = 0; i < numbers.length; i++) {
+    for (let i=0; i<numbers.length; i++) {
         if (numbers[i] > res) {
-            res = numbers[i];
+            res = numbers [i];
         }
     }
 
@@ -53,9 +55,9 @@ function max() {
 function min() {
     let res = numbers[0];
 
-    for (let i = 0; i < numbers.length; i++) {
+    for (let i=1; i<numbers.length; i++) {
         if (numbers[i] < res) {
-            res = numbers[i];
+            res = numbers [i];
         }
     }
 
@@ -63,9 +65,9 @@ function min() {
 }
 
 function allFunctions() {
-    showArray();
-    sum();
-    avg();
-    max();
-    min();
+    showArray()
+    sum()
+    avg()
+    max()
+    min()
 }

@@ -115,7 +115,7 @@ p {
   border: none;
   border-bottom: 4px solid #0ee1da;
 }
-.form-container input[type=submit] {
+.form-container input [type=submit] {
   width: 430px;
   padding: 10px;
   margin-top: 20px;

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Bangers&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: ltr;
+    background-image: linear-gradient(#f3f18880, #ffffff8a), url(../assets/background.webp);
+    padding-bottom: 200px;
+}
+
+* {
+    font-family: 'Bangers', cursive !important;
+    letter-spacing: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 0px 5px 2px #c1c1c1;
+    margin: 16px;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.frame {
+    width: 85%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #ffffffc9;
+    margin: 67px auto;
+    padding: 8px 16px;
+    border: solid black;
+    border-color: black;
+    border-width: 2px 3px 2px 3px;
+    border-radius: 93% 6% 86% 3%/2% 95% 1% 95%;
+    transform: rotate(-1deg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.innerFrame {
+    margin:15px;
+    transform: rotate(2deg);
+}
+
+.task {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #aae6ad;
+    color: rgb(0 0 0);
+    padding: 8px 12px;
+    border: solid black;
+    border-color: black;
+    float:left; 
+    border-width: 2px 3px 2px 3px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+    margin: 6px 9px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input, select {
+    border: 1px solid black;
+    padding: 8px 12px;
+    margin-top: 3px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-width: 2px 3px 2px 3px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+}
+
+header {
+    margin-bottom: 12px;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 930px) {
+    .tasks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tasks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.tasks>div {
+    box-shadow: 0 0 3px #aae6ad;
+    background-color: white;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    line-height:1.5em;
+    padding: 0 14px;
+    border: 6px solid;
+}
+
+.tasks>div.low {
+    border-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tasks>div.medium {
+    border-color: red;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tasks>div.high {
+    border-color: #69bb49;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.tasks>div.completed {
+    border: none;
+    background-color: #aae6ad;
+}
+
+.tasks footer {
+    padding: 8px 0;
+}
+
+.tasks footer .remove {
+    background-color: #ff9090;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+th>div{
+    display: flex;
+}
+
+.priority {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 5px;
+    float: right;
+}
+
+.high {
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-width: 2px 3px 2px 3px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+}
+
+.medium {
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-width: 2px 3px 2px 3px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+}
+
+.low {
+    background-color: green;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-width: 2px 3px 2px 3px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+}

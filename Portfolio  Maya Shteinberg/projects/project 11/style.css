@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Fredoka:wght@300;500;700&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-color: #f8f7ce;
+    padding-bottom: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+* {
+    font-family: 'Fredoka', sans-serif !important;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin: 16px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #9eb896c9;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.task {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #225613c9;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input,
+select {
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.login,
+.user,
+.products {
+    display: none; 
+}
+
+.logout {
+    background-color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    width: 100%;
+}
+
+
+tr {
+    background-color: white;
+}
+
+thead tr {
+    background-color: #225613c9;
+    color: black;
+}
+
+td.discount {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+th,
+td {
+    padding: 6px;
+    text-align: center;
+    width: 30%;
+}
+
+.remove,
+.save {
+    margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.remove:hover,
+.save:hover {
+    scale: 1.5;
+}
+
+.remove {
+    background: none;
+}
+
+.save {
+    background: none;
+    visibility: hidden;
+}
+
+.loaderFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000000a3;
+    display: none;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid gray;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #416e31;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 15px 15px 2px 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 860px) {
+    table td {
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 70%;
+        margin: 10px 0px 9px;
+        font-size: 10px; 
+    }
+
+    button {
+        font-size: 10px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 520px) {
+    table td {
+        padding: 0;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 50%;
+        margin: 10px 0px 9px;
+        font-size: 9px; 
+    }
+
+    button {
+        font-size: 9px;
+        width: 80%;
+    }
+}

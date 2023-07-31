@@ -22,32 +22,31 @@ const students = [
     "שפירא אביב"
 ];
 
-function showStudents() { 
+function showStudents() {
     const elem = document.getElementById("output1");
-
     if (elem.innerHTML == "") {
         elem.innerHTML = students.join(", ");
-
     } else {
         elem.innerHTML = "";
     }
+
 }
 
 function showStudents2() {
     const elem = document.getElementById("output2");
     if (elem.innerHTML == "") {
-        elem.innerHTML = students.join(", ");
+        elem.innerHTML = students.join("<br>");
     } else {
-        elem.innerHTML= "";
+        elem.innerHTML = "";
     }
 }
 
 function showStudents3() {
     const elem = document.getElementById("output3");
     if (elem.innerHTML == "") {
-        elem.innerHTML =  '<li>' + students.join("<li></li>") + '</li>;'
+        elem.innerHTML = `<li>` + students.join("</li><li>") + `</li>`;
     } else {
-        elem.innerHTML= "";
+        elem.innerHTML = "";
     }
 }
 

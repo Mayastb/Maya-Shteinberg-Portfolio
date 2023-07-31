@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>easy calculating game</title>
+        <script src="script.js" defer></script>
+    </head>
+    
+    <body>
+        <div class="frame">
+            <h1>משחק חשבון לילדים</h1>
+            <div class="calc">
+                <span>=</span>
+                <span id="num2"></span> 
+                <span id="operator">+</span> 
+                <span id="num1"></span>
+                <input id="answer" type="number" placeholder="מהי תשובתך?">
+                <button class ="checkAnswer" onclick="checkAnswer()"> בדיקה</button>
+                <p class="result"></p>
+                <p>בחר פעולה חשבונית</p>
+                <button class="mathOperator" onclick="selectOperator('+')">+</button>
+                <button class="mathOperator" onclick="selectOperator('-')">-</button>
+                <button class="mathOperator" onclick="selectOperator('*')">X</button>
+            </div>
+        </div>
+    </body>
+    
+    
+</html>
