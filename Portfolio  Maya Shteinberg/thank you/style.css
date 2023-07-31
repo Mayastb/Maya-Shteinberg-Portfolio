@@ -1,0 +1,14 @@
+html {
+    direction: ltr;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+li {
+    text-align: left;
+}
+

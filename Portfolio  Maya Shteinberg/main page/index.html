@@ -11,6 +11,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="script.js"></script>
+    
+
     <title>Maya Shteinberg - Portfolio</title>
 </head>
 
@@ -120,7 +123,6 @@
                   <img class="card-img-top" src="../projects/project-pages/project-page 5/assets/project5.jpg" alt="Card mage">
                   <div class="card-body">
                       <h4 class="card-title"> תן לנו להוביל אותך קדימה</h4>
-                      <br>
                       <p class="card-text">דף נחיתה אשר נבנה באמצעות HTML ו- CSS.</p>  
                       <a href="../projects/project-pages/project-page 5/project_page_5.html" class="btn btn-info">לעמוד הפרוייקט >> </a>
                   </div>
@@ -208,21 +210,22 @@
         <h2>צור קשר</h2>
         <p>אני אשמח לשמוע מכם! אם יש לכם שאלות, הצעות או פשוט רוצים לשוחח, אל תהססו ליצור איתי קשר. אני ממתינה בכיף לשמוע מכם ולעזור בכל דבר שאני יכולה. תוכלו למלא את הטופס למטה או להשתמש באחת מהאפשרויות ליצירת קשר המופיעות מטה.</p>
 
-        <form>
+        <form id="contactForm" onsubmit="saveContactDetails(event)">
             <label class="form-label">שם:</label>
-            <input class="form-control" type="name" placeholder="ישראל ישראלי">
-
+            <input id="name" class="form-control" type="name" placeholder="ישראל ישראלי">
+        
             <label class="form-label">אימייל:</label>
-            <input class="form-control" type="name" placeholder="example@example.com">
-
+            <input id="email" class="form-control" type="email" placeholder="example@example.com">
+        
             <label class="form-label">טלפון:</label>
-            <input class="form-control" type="name" placeholder="050-0000000">
-
+            <input id="phone" class="form-control" type="tel" placeholder="050-0000000">
+        
             <label class="form-label">הודעה:</label>
-            <textarea class="form-control" cols="30" rows="10" placeholder="גוף ההודעה"></textarea>
-
-            <button class="btn btn-info">שליחה</button>
+            <textarea id="message" class="form-control" cols="30" rows="10" placeholder="גוף ההודעה"></textarea>
+        
+            <button type="submit" class="btn btn-info">שליחה</button>
         </form>
+        
     </div>
 </section>
 
